@@ -1,16 +1,14 @@
-import java.util.ArrayList;
+package Sevenkyu;
 
-public class Kata{
+public class Trianglearea{
         public static float tArea(String tStr) {
             //We are counting \n not dots
             //Sum of \n - 2 == total height
             // Longest string of dots - 1 == base
 
-
             int countDots = 0;
 
-
-            String linesOfString[] = tStr.split("\\r?\\n");
+            String linesOfString[] = tStr.split("\\r?\\n"); //Regex is life! <3
             int countLevles = -2 + linesOfString.length;
 
 
@@ -32,21 +30,5 @@ public class Kata{
     }
 
 
-/*  .
-    .      .
-    .      .       .      ---> should return 2.0
 
-    .
-    .      .
-    .      .       .
-    .      .       .      .      ---> should return 4.5
-
-
-    2,Kata.tArea("\n.\n. .\n. . .\n"),0.0);
-    assertEquals(8,Kata.tArea("\n.\n. .\n. . .\n. . . .\n. . . . .\n"),0.0);
-
-    9
-
-    Area = (0,5*b)*h
-    */
 
